@@ -1,13 +1,63 @@
+html {
+
+}
+
+:root {
+    --color: aqua;
+}
+
+@media screen { background-color: ;
+    
+}
+
+
 body {
-    background-color: grey;
+    background-color: var(--color);
 }
-ul
-{
-    list-style-type: none;
-    text-align: right;
+
+div#container {
+    background-color: darkred;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-areas: 
+    "menubar menubar"
+    "hautDePage hautDePage"
+    "herbergements populaires"
+    "activites activites"
+    "pied pied";
+    height: 100vh;
+    max-width: 992px;
+    margin: auto;
 }
-li
-{
-    display: inline;
-    padding: 5px 20px;
+
+header.navbar {
+    background-color: blue;
+    grid-area: menubar;
 }
+
+main.page {
+    background-color: chartreuse;
+    grid-area: hautDePage;
+}
+
+article.article1 {
+    background-color: darkgoldenrod;
+    grid-area: herbergements;
+}
+
+aside.article2 {
+    background-color: darkgreen;
+    grid-area: populaires;
+}
+
+article.article3 {
+    background-color: darkmagenta;
+    grid-area: activites;
+}
+
+footer.basDePage {
+    background-color: mediumorchid;
+    grid-area: pied;
+}
+

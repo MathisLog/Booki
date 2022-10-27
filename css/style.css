@@ -1,3 +1,6 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
 html {
 
 }
@@ -6,17 +9,12 @@ html {
     --color: aqua;
 }
 
-@media screen { background-color: ;
-    
-}
-
-
 body {
     background-color: var(--color);
+    margin: 0px;
 }
-
 div#container {
-    background-color: darkred;
+    background-color: white;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 3fr 4fr 3fr 1fr;
@@ -30,19 +28,95 @@ div#container {
     max-width: 992px;
     margin: auto;
 }
-
+/*Début de la mise en plave flex box pour le navbar*/
 header.navbar {
-    background-color: blue;
+    background-color: red;
     grid-area: menubar;
 }
 
+.nav {
+    background-color: coral;
+    display: flex;
+}
+
+.nav a {
+
+}
+
+.nav a:hover {
+    
+}
+
+.nav img {
+
+}
+
+.hybride {
+    background-color: crimson;
+    flex-grow: 1;
+}
+
+.menu {
+    background-color: #443ea0;
+    flex-grow: 0.3;
+    text-align: center;
+}
+
+.menu a {
+
+}
+
+.menu a:hover {
+    border-top: 2px #0065FC;
+}
+
 main.page {
-    background-color: chartreuse;
+    background-color: white;
     grid-area: hautDePage;
 }
 
+h1{
+    height: 40px;
+    margin: px;
+    padding: 0;
+}
+
+p {
+    margin: 0px 0px 20px 0px;
+}
+
+.recherche {
+    display: flex;
+}
+
+.localisation {
+    padding: 18px;
+}
+
+.loupe {
+    display: none;
+}
+
+.rechercher {
+
+}
+/*les filtres*/
+#filtres{
+    list-style-type: none;
+    display: flex;
+}
+.filtre{
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 3px;
+}
+.filtre:hover{
+    background-color: #0065FC;
+}
+
 article.article1 {
-    background-color: darkgoldenrod;
+    background-color: darkgrey;
     grid-area: herbergements;
 }
 
@@ -59,5 +133,121 @@ article.article3 {
 footer.basDePage {
     background-color: mediumorchid;
     grid-area: pied;
+}
+/*Les bolck qui permettent le placement des items*/
+#blockh{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blockp{
+    display: flex;
+    flex-direction: column;
+}
+
+#blocka{
+    display: flex;
+}
+
+/*Ce sont les items qui permettent de tester flex box*/
+.photoh{
+    width: 140px;
+    height: 100px;
+    border: 5px solid #443ea0;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.photop{
+    width: 100px;
+    height: 100px;
+    border: 5px solid #443ea0;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.photoa{
+    width: 100px;
+    height: 100px;
+    border: 5px solid #443ea0;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+/*Les medias queries pour le responsive*/
+/*Format mobile: écran entre 0px et 768px */
+@media screen and (min-width: 0px) and (max-width:768px){
+    div#container {
+        background-color: darkred;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+        grid-template-areas: 
+        "menubar menubar"
+        "hautDePage hautDePage"
+        "populaires populaires"
+        "herbergements herbergements"
+        "activites activites"
+        "pied pied";
+        height: 100vh;
+        max-width: 992px;
+        margin: auto;
+    }
+
+    #blockh{
+        grid-template-columns: 1fr;
+    }
+
+    #blocka{
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .hybride {
+        display: none;
+    }
+    
+    .menu {
+        
+    }
+}
+/*Format tablette: écran entre 768 et 992*/
+@media screen and (min-width: 768px) and (max-width:992px){
+    div#container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+        grid-template-areas: 
+        "menubar menubar"
+        "hautDePage hautDePage"
+        "herbergements herbergements"
+        "populaires populaires"
+        "activites activites"
+        "pied pied";
+    }
+    #blockp{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/*Format desktop: écran entre 992px et au-dessus*/
+@media screen and (min-width: 992px){
+    div#container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+        grid-template-areas: 
+        "menubar menubar"
+        "hautDePage hautDePage"
+        "herbergements  populaires"
+        "activites activites"
+        "pied pied";
+        height: 100vh;
+        max-width: 1400px;
+        margin: auto;
+    }
 }
 

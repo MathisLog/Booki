@@ -232,7 +232,7 @@ p {
 } 
 
 /*La partie Hébergements*/
-article.article1 {
+.article1 {
     background-color: darkgrey;
     grid-area: herbergements;
 }
@@ -246,6 +246,8 @@ article.article1 {
     background-color: #443ea0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
 .cards3a a {
@@ -276,6 +278,7 @@ article.article1 {
     background-color: blue;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .cards3b a {
@@ -287,74 +290,125 @@ article.article1 {
 }
 
 
-.blockh{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-}
 
 /*Ce sont les items qui permettent de tester flex box*/
-.photoh{
-    width: 22.5%;
-    height: 100px;
-    border: 5px solid #443ea0;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-}
 
 i {
     color: #0065FC;
 }
 
 /*La partie Populaire*/
-aside.article2 {
+.article2 {
     background-color: darkgreen;
     grid-area: populaires;
 }
 
-#blockp{
+.populaire {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+} 
+
+.article2 h2 {
+    margin: 0;
+    padding: 0;
 }
 
-.photop{
-    width: 80%;
-    height: 100px;
-    border: 5px solid #443ea0;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
+.article2 i {
+
+}
+
+.cards4a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards4a a {
+
 }
 
 /*La partie activité*/
-article.article3 {
+.article3 {
     background-color: darkmagenta;
     grid-area: activites;
 }
 
-#blocka{
+.article3 h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.cards5a {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.photoa{
-    width: 23%;
-    height: 100px;
-    border: 5px solid #443ea0;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
+.cards5a a {
+
 }
 
-footer.basDePage {
+.basDePage {
     background-color: mediumorchid;
     grid-area: pied;
 }
+
+.nav1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.foot {
+
+}
+
+.foot h3 {
+
+}
+
+.foot a {
+
+}
+
+.foot a p {
+
+}
+
+.foot1 {
+
+}
+
+.foot1 h3 {
+
+}
+
+.foot1 a {
+
+}
+
+.foot1 a p {
+
+}
+
+.foot2 {
+
+}
+
+.foot2 h3 {
+
+}
+
+.foot2 a {
+
+}
+
+.foot2 a p {
+
+}
+
+
+
 /*Les bolck qui permettent le placement des items*/
 
 /*Les medias queries pour le responsive*/
@@ -445,27 +499,18 @@ footer.basDePage {
         flex-direction: column;
     }
 
-    .blockh {
-        flex-direction: column;
-        height: 1400px;
+    .afficher {
+        display: none;
     }
 
-    .photoh {
-        width: 90%;
-        height: 11%;
-    }
-
-    .photoa {
-        width: 90%;
-    }
-
-    .photop {
-        width: 90%;
-    }
-
-    #blocka {
+    .cards5a {
         flex-direction: column;
     }
+
+    .nav1 {
+        flex-direction: column;
+    }
+
 }
 /*Format tablette: écran entre 768 et 992*/
 @media screen and (min-width: 768px) and (max-width:992px){
@@ -480,26 +525,12 @@ footer.basDePage {
         "activites activites"
         "pied pied";
     }
-    #blockp{
+
+    .cards4a {
         flex-direction: row;
-        justify-content: space-around;
     }
 
-    .hybride1 {
-        display: none;
-    }
 
-    .hybride2 {
-        display: none;
-    }
-
-    #filtres {
-        width: auto;
-    }
-
-    .blockh {
-        height: 60%;
-    }
 
 
 }
@@ -520,12 +551,5 @@ footer.basDePage {
         margin: auto;
     }
 
-    .hybride1 {
-        display: none;
-    }
-
-    .hybride2 {
-        display: none;
-    }
 }
 

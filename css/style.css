@@ -60,10 +60,12 @@ header.navbar {
     background-color: #443ea0;
     flex-grow: 0.3;
     text-align: center;
+    display: flex;
 }
 
-.menu a {
-
+.menu p {
+    color: beige;
+    width: 50%;
 }
 
 .menu a:hover {
@@ -75,6 +77,93 @@ main.page {
     grid-area: hautDePage;
 }
 
+.page h1 {
+
+}
+
+.page p {
+    margin: 0;
+    padding: 0;
+}
+
+.searchDesktop {
+    display: flex;
+    align-items: center;
+}
+
+.searchDesktop i {
+
+}
+
+.searchDesktop p {
+
+}
+
+.searchDesktop button {
+
+}
+
+.searchMobile {
+    display: none;
+}
+
+.searchMobile i {
+
+}
+
+.searchMobile p {
+    
+}
+
+.searchMobile button {
+
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filters p {
+
+}
+
+.filters1 {
+    display: flex;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter i {
+
+}
+
+.filter p {
+
+}
+
+.filters2 {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+
+}
+
+.info p {
+
+}
+
+/*
 h1{
     height: 40px;
     margin: px;
@@ -90,7 +179,7 @@ p {
 }
 
 .localisation {
-    padding: 18px;
+    padding: 15px;
 }
 
 .loupe {
@@ -98,36 +187,168 @@ p {
 }
 
 .rechercher {
-
-}
-/*les filtres*/
-#filtres{
-    list-style-type: none;
-    display: flex;
-}
-.filtre{
-    margin: 10px;
-    border: 2px solid grey;
-    border-radius: 15px;
-    padding: 3px;
-}
-.filtre:hover{
     background-color: #0065FC;
+    padding: 8px;
 }
 
+.rechercher a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.rechercher p {
+    margin: 0px 0px 5px 0px;
+} */
+
+/*les filtres*/
+/*
+#filtres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 768px;
+    flex-wrap: wrap;
+}
+
+#filtres p {
+    margin: 10px 0px 20px 0px;
+    flex-wrap: wrap;
+    border: 2px solid #443ea0;
+    padding: 6px;
+    margin: 5px;
+}
+
+.hybride1 {
+    width : 700px;
+    background-color: red;
+    margin-right: 100px;
+}
+
+.hybride2 {
+    width : 700px;
+    background-color: red;
+    margin-right: 100px;
+} 
+
+/*La partie Hébergements*/
 article.article1 {
     background-color: darkgrey;
     grid-area: herbergements;
 }
 
+.article1 h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.cards3a {
+    background-color: #443ea0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards3a a {
+
+}
+
+.card {
+    
+}
+
+.cardImg3 {
+    background-color: brown;
+}
+
+.cardText3 {
+    background-color: darkgoldenrod;
+}
+
+.avis {
+    
+} 
+
+.avis i {
+
+}
+
+.cards3b {
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards3b a {
+
+}
+
+.article1 a {
+
+}
+
+
+.blockh{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+/*Ce sont les items qui permettent de tester flex box*/
+.photoh{
+    width: 22.5%;
+    height: 100px;
+    border: 5px solid #443ea0;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+i {
+    color: #0065FC;
+}
+
+/*La partie Populaire*/
 aside.article2 {
     background-color: darkgreen;
     grid-area: populaires;
 }
 
+#blockp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photop{
+    width: 80%;
+    height: 100px;
+    border: 5px solid #443ea0;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*La partie activité*/
 article.article3 {
     background-color: darkmagenta;
     grid-area: activites;
+}
+
+#blocka{
+    display: flex;
+    align-items: center;
+}
+
+.photoa{
+    width: 23%;
+    height: 100px;
+    border: 5px solid #443ea0;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 footer.basDePage {
@@ -135,45 +356,7 @@ footer.basDePage {
     grid-area: pied;
 }
 /*Les bolck qui permettent le placement des items*/
-#blockh{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-#blockp{
-    display: flex;
-    flex-direction: column;
-}
-
-#blocka{
-    display: flex;
-}
-
-/*Ce sont les items qui permettent de tester flex box*/
-.photoh{
-    width: 140px;
-    height: 100px;
-    border: 5px solid #443ea0;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-}
-.photop{
-    width: 100px;
-    height: 100px;
-    border: 5px solid #443ea0;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-}
-.photoa{
-    width: 100px;
-    height: 100px;
-    border: 5px solid #443ea0;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-}
 /*Les medias queries pour le responsive*/
 /*Format mobile: écran entre 0px et 768px */
 @media screen and (min-width: 0px) and (max-width:768px){
@@ -194,14 +377,6 @@ footer.basDePage {
         margin: auto;
     }
 
-    #blockh{
-        grid-template-columns: 1fr;
-    }
-
-    #blocka{
-        grid-template-columns: 1fr;
-    }
-
     .nav {
         flex-direction: column;
         flex-wrap: wrap;
@@ -213,6 +388,83 @@ footer.basDePage {
     
     .menu {
         
+    }
+
+    /*
+
+    .rechercher {
+        display: none;
+    }
+
+    .loupe {
+        display: flex;
+        padding: 15px;
+    }
+
+    .hybride1 {
+        display: flex;
+    }
+
+    .hybride2 {
+        display: flex;
+    }
+
+    #filtres {
+        justify-content: left;
+        text-align: center;
+        width: 100%;
+    }
+
+    #filtres p:first-child {
+        text-align: left;
+    }
+
+    #filtres p {
+        width: 43%;
+    }
+    */
+
+    .searchDesktop {
+        display: none;
+    }
+
+    .searchMobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .cards3a {
+        flex-direction: column;
+    }
+
+    .cards3b {
+        flex-direction: column;
+    }
+
+    .blockh {
+        flex-direction: column;
+        height: 1400px;
+    }
+
+    .photoh {
+        width: 90%;
+        height: 11%;
+    }
+
+    .photoa {
+        width: 90%;
+    }
+
+    .photop {
+        width: 90%;
+    }
+
+    #blocka {
+        flex-direction: column;
     }
 }
 /*Format tablette: écran entre 768 et 992*/
@@ -232,6 +484,24 @@ footer.basDePage {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .hybride1 {
+        display: none;
+    }
+
+    .hybride2 {
+        display: none;
+    }
+
+    #filtres {
+        width: auto;
+    }
+
+    .blockh {
+        height: 60%;
+    }
+
+
 }
 /*Format desktop: écran entre 992px et au-dessus*/
 @media screen and (min-width: 992px){
@@ -248,6 +518,14 @@ footer.basDePage {
         height: 100vh;
         max-width: 1400px;
         margin: auto;
+    }
+
+    .hybride1 {
+        display: none;
+    }
+
+    .hybride2 {
+        display: none;
     }
 }
 

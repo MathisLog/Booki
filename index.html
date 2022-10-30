@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
     <!-- file css-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- file normalize css-->
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
     <!--file fonts raleway-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!--Ajout des icônes-->
-    <script src="https://kit.fontawesome.com/6d17ab8b2a.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/6d17ab8b2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <div id="container">
-        <header class="navbar">
-            <!--Ajout du logo-->
-            <!--Ajout du menu hébergements et Activités-->
-            <div class="nav">
-                <a href="#"><img src="./images/logo/Booki.png" alt="Logo Booki"></a>
-                <div class="hybride"></div>
-                <div class="menu">
-                    <a href="#blockh">Hébergements</a>
-                    <a href="#blocka">Activités</a>
-                </div>
-            </div>
-            <!--
+      <header class="navbar">
+        <!--Ajout du logo-->
+        <!--Ajout du menu hébergements et Activités-->
+        <div class="nav">
+          <a href="#"><img src="./images/logo/Booki.png" alt="Logo Booki" /></a>
+          <div class="hybride"></div>
+          <div class="menu">
+            <p><a href="#blockh">Hébergements</a></p>
+            <p><a href="#blocka">Activités</a></p>
+          </div>
+        </div>
+        <!--
             <div id="menu">
                 <ul>
                     <li><img class="Logo" src="images/logo/Booki.png" alt="Logo du site"></li>
@@ -38,16 +45,60 @@
                 </ul>
             </div>
             -->
-        </header>
-        <main class="page">
-            <!--Début du texte-->
-            <h1>Trouvez votre hébergements pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-                <div>
-                    <form action="post">
+      </header>
+      <main class="page">
+        <!--Début du texte-->
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+
+        <div class="searchDesktop">
+          <i>icon map</i>
+          <p>Marseille, paris</p>
+          <button><p>Rechercher</p></button>
+        </div>
+
+        <div class="searchMobile">
+          <i>icon map</i>
+          <p>Marseille, paris</p>
+          <button><p>icon</p></button>
+        </div>
+
+        <div class="filters">
+          <p>Filtres</p>
+
+          <div class="filters1">
+            <div class="filter">
+              <i>icon</i>
+              <p>Economique</p>
+            </div>
+            <div class="filter">
+              <i>icon</i>
+              <p>Familial</p>
+            </div>
+          </div>
+
+          <div class="filters2">
+            <div class="filter">
+              <i>icon</i>
+              <p>Romantique</p>
+            </div>
+            <div class="filter">
+              <i>icon</i>
+              <p>Animaux autorisé</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info">
+          <i>icon info</i>
+          <p>Plus de 500</p>
+        </div>
+        <!--la barre de recherche
+            <div>
+                <form action="post">
                     <div class="recherche">
                         <div class="localisation">
-                        <i class="fa-solid fa-location-dot"></i>
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <label for="recherche"></label>
                         <input type="text" name="recherche" value="Marseille, France" id="recherche">
@@ -55,69 +106,179 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="rechercher">
-                            <button>Rechercher</button>
+                            <p><a href="#">Rechercher</a></p>
                         </div>
                     </div>
-                    </form>
+                </form>
+            </div>-->
+        <!--Les filtres
+            <div id="filtres">
+                <strong>
+                    <p>Filtres</p>
+                </strong>
+                <div class="hybride1"></div>
+                <p>Économique</p>
+                <p>Familial</p>
+                <div class="hybride2"></div>
+                <p>Romantique</p>
+                <p>Animaux autorisés</p>
+            </div>-->
+      </main>
+      <!--Quelques changements sur le texte des blocks-->
+      <article class="article1">
+        <h2>Hébergements à marseille</h2>
+
+        <div class="cards3a">
+          <a href="#">
+            <div class="card">
+              <div class="cardImg3">Images</div>
+              <div class="cardText3">
+                texte
+                <div class="avis">
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
                 </div>
-            <div>
-                <p>Filtres</p>
-                <div>
-                    <ul id="filtres">
-                        <li class="filtre">Économique</li>
-                        <li class="filtre">Familial</li>
-                        <li class="filtre">Romantique</li>
-                        <li class="filtre">Animaux autorisés</li>
-                    </ul>
-                </div>
+              </div>
             </div>
-        
-        </main>
-        <!--Quelques changements sur le texte des blocks-->
-        <article class="article1">
-            <h2>Hébergements à marseille</h2>
-            <div id="blockh">
-                <div class="photoh">
-                    <a href="#"><img src="./images/hebergements/4_small/auberge_canebiere_small.jpg" width="150px" alt=""></a>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+          </a>
+
+          <a href="#">
+            <div class="card">
+              <div class="cardImg3">Images</div>
+              <div class="cardText3">
+                texte
+                <div class="avis">
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
                 </div>
-                <div class="photoh">
-                    <a href="#">2</a>
-                </div>
-                <div class="photoh">
-                    <a href="#">3</a></div>
-                <div class="photoh"><a href="#">4</a>
-                </div>
-                <div class="photoh">
-                    <a href="#">5</a>
-                </div>
-                <div class="photoh">
-                    <a href="#">6</a>
-                </div>
+              </div>
             </div>
-        </article>
-        <aside class="article2">
-            <h2>Les plus populaires</h2>
-            <div id="blockp">
-                <div class="photop"><a href="#">1</a></div>
-                <div class="photop"><a href="#">2</a></div>
-                <div class="photop"><a href="#">3</a></div>
+          </a>
+
+          <a href="#">
+            <div class="card">
+              <div class="cardImg3">Images</div>
+              <div class="cardText3">
+                texte
+                <div class="avis">
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                </div>
+              </div>
             </div>
-        </aside>
-        <article class="article3">
-            <h2>Activités à Marseille</h2>
-            <div id="blocka">
-                <div class="photoa"><a href="#">1</a></div>
-                <div class="photoa"><a href="#">2</a></div>
-                <div class="photoa"><a href="#">3</a></div>
-                <div class="photoa"><a href="#">4</a></div>
+          </a>
+        </div>
+
+        <div class="cards3b">
+          <a href="#">
+            <div class="card">
+              <div class="cardImg3">Images</div>
+              <div class="cardText3">
+                texte
+                <div class="avis">
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                </div>
+              </div>
             </div>
-        </article>
-        <footer class="basDePage">footer</footer>
+          </a>
+
+          <a href="#">
+            <div class="card">
+              <div class="cardImg3">Images</div>
+              <div class="cardText3">
+                texte
+                <div class="avis">
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="card">
+              <div class="cardImg3">Images</div>
+              <div class="cardText3">
+                texte
+                <div class="avis">
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                  <i>icon</i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="#">Afficher plus</a>
+
+        <!--
+        <div class="blockh">
+          <div class="photoh">
+            <a href="#"
+              ><img
+                src="./images/hebergements/4_small/auberge_canebiere_small.jpg"
+                width="150px"
+                alt=""
+            /></a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="photoh">
+            <a href="#">2</a>
+          </div>
+          <div class="photoh">
+            <a href="#">3</a>
+          </div>
+          <div class="photoh">
+            <a href="#">4</a>
+          </div>
+          <div class="photoh">
+            <a href="#">5</a>
+          </div>
+          <div class="photoh">
+            <a href="#">6</a>
+          </div>
+        </div> -->
+      </article>
+      <aside class="article2">
+        <h2>Les plus populaires</h2>
+        <div id="blockp">
+          <div class="photop"><a href="#">1</a></div>
+          <div class="photop"><a href="#">2</a></div>
+          <div class="photop"><a href="#">3</a></div>
+        </div>
+      </aside>
+      <article class="article3">
+        <h2>Activités à Marseille</h2>
+        <div id="blocka">
+          <div class="photoa"><a href="#">1</a></div>
+          <div class="photoa"><a href="#">2</a></div>
+          <div class="photoa"><a href="#">3</a></div>
+          <div class="photoa"><a href="#">4</a></div>
+        </div>
+      </article>
+      <footer class="basDePage">footer</footer>
     </div>
-</body>
+  </body>
 </html>

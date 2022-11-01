@@ -30,21 +30,21 @@ div#container {
 }
 /*Début de la mise en plave flex box pour le navbar*/
 header.navbar {
-    background-color: red;
     grid-area: menubar;
 }
 
 .nav {
-    background-color: coral;
+    background-color: yellow;
     display: flex;
 }
 
 .nav a {
-
+    color: black;
+    text-decoration: none;
 }
 
 .nav a:hover {
-    
+    color: #0065FC
 }
 
 .nav img {
@@ -52,12 +52,12 @@ header.navbar {
 }
 
 .hybride {
-    background-color: crimson;
+    background-color: red;
     flex-grow: 1;
 }
 
 .menu {
-    background-color: #443ea0;
+    background-color: green;
     flex-grow: 0.3;
     text-align: center;
     display: flex;
@@ -66,10 +66,15 @@ header.navbar {
 .menu p {
     color: beige;
     width: 50%;
+    padding-top: 10px;
+}
+
+.menu p:hover {
+    border-top: 2px solid #0065FC;
 }
 
 .menu a:hover {
-    border-top: 2px #0065FC;
+    
 }
 
 main.page {
@@ -78,17 +83,19 @@ main.page {
 }
 
 .page h1 {
-
+    margin-bottom: 5px;
 }
 
 .page p {
     margin: 0;
+    margin-bottom: 5px;
     padding: 0;
 }
 
 .searchDesktop {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .searchDesktop i {
@@ -105,6 +112,7 @@ main.page {
 
 .searchMobile {
     display: none;
+    margin-bottom: 20px;
 }
 
 .searchMobile i {
@@ -123,6 +131,7 @@ main.page {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .filters p {
@@ -136,6 +145,10 @@ main.page {
 .filter {
     display: flex;
     align-items: center;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 7px;
+    margin: 0px 25px;
 }
 
 .filter i {
@@ -435,13 +448,20 @@ i {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .nav a {
+        text-align: center;
+    }
     
     .hybride {
         display: none;
     }
     
-    .menu {
-        
+    .menu p:hover {
+        padding-top: 0px;
+        padding-bottom: 10px;
+        border-top: 0px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
     }
 
     /*

@@ -60,6 +60,8 @@
 
 <a><img href="./images/demo/demo-site-desktop"></img></a>
 
+<p>Voici la maquette du site en desktop</p>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

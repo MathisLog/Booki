@@ -71,8 +71,8 @@
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![HTML][HTML 5]][https://developer.mozilla.org/fr/docs/Web/HTML]
-* [![CSS][CSS 3]][https://developer.mozilla.org/fr/docs/Web/CSS]
+* [![HTML][HTML 5]][html-url]
+* [![CSS][CSS 3]][css-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

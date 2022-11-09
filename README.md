@@ -45,12 +45,11 @@
         <li><a href="#built-with">Construit avec</a></li>
       </ul>
     </li>
-    <li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#roadmap">Feuille de route</a></li>
+    <li><a href="#contributing">Contribuant</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#contact">Contacte</a></li>
+    <li><a href="#acknowledgments">Remerciements</a></li>
   </ol>
 </details>
 
@@ -59,7 +58,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][demo-site-desktop]](https://example.com)
+<a><img href="./images/demo/demo-site-desktop"></img></a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -170,12 +170,12 @@ main.page {
     border-radius: 30px;
     padding: 7px;
     margin: 10px 6px;
-    width: 148px;
+    width: 140px;
     justify-content: center;
 }
 
 .filter i {
-
+    margin-right: 10px;
 }
 
 .filter p {
@@ -253,7 +253,9 @@ main.page {
 }
 
 .cardText3 {
-    width: 200px;
+    width: 100%;
+    margin-left: 10px;
+
 }
 
 .cardText3 p {
@@ -328,7 +330,7 @@ i {
 }
 
 .article2 i {
-
+    
 }
 
 .cards4a {
@@ -362,7 +364,6 @@ i {
 
 /*La partie activité*/
 .article3 {
-    background-color: darkmagenta;
     grid-area: activites;
 }
 
@@ -393,7 +394,6 @@ i {
 }
 
 .basDePage {
-    background-color: mediumorchid;
     grid-area: pied;
 }
 
@@ -401,6 +401,7 @@ i {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #f2f2f2;
 }
 
 .foot {
@@ -532,6 +533,10 @@ i {
         border-radius: 0px 0px;
     }
 
+    .article2 h2 {
+        margin-left: 50px;
+    }
+
     .cards3a {
         flex-direction: column;
         align-content: center;
@@ -595,12 +600,16 @@ i {
         "pied pied";
     }
 
+    .article2 h2 {
+        margin-left: 240px;
+    }
+
     .cards4a {
         flex-direction: row;
     }
 
     .cards4a a {
-        width: 51%;
+        width: 33%;
     }
 
     .cards5a .cardImg3 img {

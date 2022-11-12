@@ -6,8 +6,16 @@ html {
 }
 
 :root {
-    --color: white;
+    --color1: #0065FC;
+    --color2: #DEEBFF;
+    --color3: #F2F2F2;
 }
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
 
 body {
     background-color: var(--color);
@@ -45,7 +53,7 @@ header.navbar {
 }
 
 .nav a:hover {
-    color: #0065FC
+    color: var(--color1)
 }
 
 .nav img {
@@ -70,7 +78,11 @@ header.navbar {
 }
 
 .menu p:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid var(--color1);
+}
+
+.menu a {
+
 }
 
 .menu a:hover {
@@ -106,6 +118,12 @@ main.page {
     border-radius: 10px 0px 0px 10px;
 }
 
+.localisation::before {
+    font: var(--fa-font-solid);
+    content: "\f3c5";
+    color: black;
+  }
+
 .searchDesktop p {
     margin: 0px;
     padding: 6px;
@@ -120,6 +138,11 @@ main.page {
     border: solid 1px #d9d9d9;
     border-radius: 0px 10px 10px 0px;
 }
+
+.button::before {
+    font: var(--fa-font-solid);
+    content: "\f002";
+  }
 
 .searchMobile {
     display: none;
@@ -148,6 +171,11 @@ main.page {
     border-radius: 0px 10px 10px 0px;
 }
 
+.loupe::before {
+    font: var(--fa-font-solid);
+    content: "\f005";
+  }
+
 .filters {
     display: flex;
     flex-direction: row;
@@ -157,6 +185,7 @@ main.page {
 
 .filters p {
     margin: 0px;
+    height: 15px;
 }
 
 .filters1 {
@@ -171,38 +200,83 @@ main.page {
     padding: 7px;
     margin: 10px 6px;
     width: 140px;
+    opacity: 1;
+    background-color: #fff;
     justify-content: center;
+    transition: opacity 0.4s;
+}
+
+.filter:hover {
+    opacity: 0.5;
 }
 
 .filter i {
     margin-right: 10px;
+    color: var(--color1);
 }
 
+.billet::before {
+    font: var(--fa-font-solid);
+    content: "\f53a";
+  }
+
+.personne::before {
+    font: var(--fa-font-solid);
+    content: "\f183";
+  }
+
 .filter p {
-    
+    font-size: 13px;
 }
 
 .filters2 {
     display: flex;
 }
 
+.filters2 filter {
+
+}
+
+.filters2 filter i {
+
+}
+
+.coeur::before {
+    font: var(--fa-font-solid);
+    content: "\f004";
+  }
+
+.chien::before {
+    font: var(--fa-font-solid);
+    content: "\f6d3";
+  }
+
+.filters2 filter p {
+
+}
+
 .info {
     display: flex;
-    align-items: center;
+    
 }
 
 .info i {
-    padding: 10px 15px;
+    padding: 7px 13px;
     border: solid 1px gray;
     border-radius: 30px;
 }
+
+.information::before {
+    font: var(--fa-font-solid);
+    content: "\f129";
+  }
 
 .info p {
     margin: 0px 0px 0px 10px;
 }
 
 /*La partie Hébergements*/
-.article1 {
+article#article1 {
     background-color: #f2f2f2;
     grid-area: herbergements;
     margin: 10px;
@@ -210,7 +284,7 @@ main.page {
     padding: 10px;
 }
 
-.article1 h2 {
+#article1 h2 {
     margin: 0;
     margin-bottom: 10px;
     margin-left: 15px;
@@ -229,16 +303,30 @@ main.page {
     color: black;
 }
 
+.cards3a a:hover {
+
+}
+
 .card {
     margin: 7px;
     padding: 7px;
     border: solid 0px white;
     border-radius: 20px;
     background-color: white;
+
+    transition: box-shadow 0.5s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 1px black;
 }
 
 .card :nth-child(1) {
     font-weight: bold;
+}
+
+.card:last-child {
+    font-weight: lighter;
 }
 
 .cardImg3 {
@@ -255,7 +343,6 @@ main.page {
 .cardText3 {
     width: 100%;
     margin-left: 10px;
-
 }
 
 .cardText3 p {
@@ -268,12 +355,17 @@ main.page {
 } 
 
 .avis :nth-child(5) {
-    color: rgb(228, 216, 216);
+    color: var(--color2);
 }
 
 .avis i {
     
 }
+
+.etoile::before {
+    font: var(--fa-font-solid);
+    content: "\f005";
+  }
 
 .cards3b {
     display: flex;
@@ -287,9 +379,13 @@ main.page {
     color: black;
 }
 
-.article1 a {
+#article1 a {
     color: black;
     text-decoration: none;
+}
+
+#article1 a {
+
 }
 
 .afficher {
@@ -297,21 +393,15 @@ main.page {
     margin-top: 40px;
 }
 
-.card:last-child {
-    font-weight: lighter;
-}
-
-
-
 /*Ce sont les items qui permettent de tester flex box*/
 
 i {
-    color: #0065FC;
+    color: var(--color1);
 }
 
 /*La partie Populaire*/
-.article2 {
-    background-color: #f2f2f2;
+aside#article2 {
+    background-color: var(--color3);
     grid-area: populaires;
     margin: 10px;
     border-radius: 20px;
@@ -322,16 +412,26 @@ i {
     display: flex;
 } 
 
-.article2 h2 {
+.populaire h2 {
     margin: 0;
     margin-left: 30px;
     margin-bottom: 10px;
     padding: 0;
 }
 
-.article2 i {
+.hybride {
+
+}
+
+.populaire i {
     
 }
+
+.graph::before {
+    font: var(--fa-font-solid);
+    content: "\f201";
+  }
+
 
 .cards4a {
     display: flex;
@@ -363,11 +463,11 @@ i {
 }
 
 /*La partie activité*/
-.article3 {
+#article3 {
     grid-area: activites;
 }
 
-.article3 h2 {
+#article3 h2 {
     margin: 0;
     padding: 0;
 }
@@ -382,6 +482,30 @@ i {
     width: 25%;
     text-decoration: none;
     color: black;
+}
+
+.cards5a a:hover {
+
+}
+
+.card {
+
+}
+
+.cardImg3 {
+
+}
+
+.cardImg3 img {
+
+}
+
+.cardText3 {
+
+}
+
+.cardText3 p {
+
 }
 
 .cards5a .cardImg3 img {
@@ -408,30 +532,52 @@ i {
 
 }
 
-.foot h3 {
+.foot h2 {
+    font-size: 18px;
+}
 
+.foot ul {
+    list-style-type: none;
+}
+
+.foot ul li {
+    margin-bottom: 12px;
 }
 
 .foot a {
     text-decoration: none;
     color: black;
+    transition: color 0.4s;
 }
 
-.foot a p {
-
+.foot a:hover {
+    color: var(--color1);
 }
 
 .foot1 {
 
 }
 
-.foot1 h3 {
+.foot1 ul {
+    list-style-type: none;
+}
 
+.foot1 ul li {
+    margin-bottom: 12px;
+}
+
+.foot1 h2 {
+    font-size: 18px;
 }
 
 .foot1 a {
     text-decoration: none;
     color: black;
+    transition: color 0.4s;
+}
+
+.foot1 a:hover {
+    color: var(--color1);
 }
 
 .foot1 a p {
@@ -442,13 +588,26 @@ i {
 
 }
 
-.foot2 h3 {
+.foot2 ul {
+    list-style-type: none;
+}
 
+.foot2 ul li {
+    margin-bottom: 12px;
+}
+
+.foot2 h2 {
+    font-size: 18px;
 }
 
 .foot2 a {
     text-decoration: none;
     color: black;
+    transition: color 0.4s;
+}
+
+.foot2 a:hover {
+    color: var(--color1);
 }
 
 .foot2 a p {
@@ -523,17 +682,17 @@ i {
         justify-content: center;
     }
 
-    .article1 {
+    #article1 {
         background-color: white;
     }
 
-    .article2 {
+    #article2 {
         background-color: #f2f2f2;
         margin: 0px;
         border-radius: 0px 0px;
     }
 
-    .article2 h2 {
+    #article2 h2 {
         margin-left: 50px;
     }
 
@@ -600,7 +759,7 @@ i {
         "pied pied";
     }
 
-    .article2 h2 {
+    #article2 h2 {
         margin-left: 240px;
     }
 
@@ -615,13 +774,6 @@ i {
     .cards5a .cardImg3 img {
         height: 211px;
     }
-
-
-    
-
-
-
-
 }
 /*Format desktop: écran entre 992px et au-dessus*/
 @media screen and (min-width: 992px){
@@ -639,6 +791,5 @@ i {
         max-width: 1400px;
         margin: auto;
     }
-
 }
 

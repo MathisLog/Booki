@@ -257,7 +257,6 @@ main.page {
 
 .info {
     display: flex;
-    
 }
 
 .info i {
@@ -384,7 +383,7 @@ article#article1 {
     text-decoration: none;
 }
 
-#article1 a {
+#article1 a:hover {
 
 }
 

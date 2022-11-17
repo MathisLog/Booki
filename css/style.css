@@ -1,8 +1,7 @@
-*{
-    font-family: 'Raleway', sans-serif;
-}
-html {
+@import url('https://fonts.googleapis.com/css2 ? 1 300;1 400;1 500;1 600;1 700;1 800;1 900 & display=swap');
 
+html {
+    font-family: 'Raleway',Courier, Courier, monospace;
 }
 
 :root {
@@ -21,6 +20,7 @@ body {
     background-color: var(--color);
     margin: 0px;
 }
+
 div#container {
     background-color: white;
     display: grid;
@@ -43,6 +43,7 @@ header.navbar {
 
 .nav {
     display: flex;
+    margin-left: 10px;
 }
 
 .nav a {
@@ -57,7 +58,7 @@ header.navbar {
 }
 
 .nav img {
-    width: 80px;
+    
 }
 
 .hybride {
@@ -92,9 +93,11 @@ header.navbar {
 main.page {
     background-color: white;
     grid-area: hautDePage;
+    margin-left: 10px;
 }
 
 .page h1 {
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 22px;
 }
@@ -116,6 +119,7 @@ main.page {
     padding: 7px;
     border: solid 1px #d9d9d9;
     border-radius: 10px 0px 0px 10px;
+    background-color: var(--color3);
 }
 
 .localisation::before {
@@ -126,7 +130,7 @@ main.page {
 
 .searchDesktop p {
     margin: 0px;
-    padding: 6px;
+    padding: 7px;
     width: 150px;
     border: solid 1px #d9d9d9;
 }
@@ -134,7 +138,7 @@ main.page {
 .searchDesktop button {
     background-color: #0065FC;
     color: aliceblue;
-    padding: 7px;
+    padding: 8px;
     border: solid 1px #d9d9d9;
     border-radius: 0px 10px 10px 0px;
 }
@@ -186,6 +190,11 @@ main.page {
 .filters p {
     margin: 0px;
     height: 15px;
+}
+
+.filters p:first-child {
+    font-weight: bold;
+    margin-top: 16px;
 }
 
 .filters1 {
@@ -257,6 +266,7 @@ main.page {
 
 .info {
     display: flex;
+    margin-bottom: 15px;
 }
 
 .info i {
@@ -271,7 +281,7 @@ main.page {
   }
 
 .info p {
-    margin: 0px 0px 0px 10px;
+    margin: 8px 0px 0px 10px;
 }
 
 /*La partie Hébergements*/
@@ -279,15 +289,14 @@ article#article1 {
     background-color: #f2f2f2;
     grid-area: herbergements;
     margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 15px;
+    padding: 20px;
 }
 
 #article1 h2 {
-    margin: 0;
-    margin-bottom: 10px;
-    margin-left: 15px;
+    margin: 10px 0px 15px 15px;
     padding: 0;
+    font-size: 22px;
 }
 
 .cards3a {
@@ -389,7 +398,7 @@ article#article1 {
 
 .afficher {
     font-weight: bold;
-    margin-top: 40px;
+    margin: 40px 0px 30px 5px;
 }
 
 /*Ce sont les items qui permettent de tester flex box*/
@@ -403,7 +412,7 @@ aside#article2 {
     background-color: var(--color3);
     grid-area: populaires;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 0px;
 }
 
@@ -412,10 +421,9 @@ aside#article2 {
 } 
 
 .populaire h2 {
-    margin: 0;
-    margin-left: 30px;
-    margin-bottom: 10px;
+    margin: 30px 0px 15px 30px;
     padding: 0;
+    font-size: 22px;
 }
 
 .hybride {
@@ -423,7 +431,7 @@ aside#article2 {
 }
 
 .populaire i {
-    
+    margin: 30px 40px 0px 0px;
 }
 
 .graph::before {
@@ -431,13 +439,13 @@ aside#article2 {
     content: "\f201";
   }
 
-
 .cards4a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
+    height: 580px;
 }
 
 .cards4a a {
@@ -464,11 +472,14 @@ aside#article2 {
 /*La partie activité*/
 #article3 {
     grid-area: activites;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #article3 h2 {
-    margin: 0;
+    margin: 0px 0px 0px 15px;
     padding: 0;
+    font-size: 22px;
 }
 
 .cards5a {
@@ -537,6 +548,7 @@ aside#article2 {
 
 .foot ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .foot ul li {
@@ -559,6 +571,7 @@ aside#article2 {
 
 .foot1 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .foot1 ul li {
@@ -589,6 +602,7 @@ aside#article2 {
 
 .foot2 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .foot2 ul li {
@@ -657,7 +671,7 @@ aside#article2 {
     }
 
     .page h1 {
-        margin-top: 10px;
+        margin-top: 40px;
     }
 
     .searchDesktop {
@@ -669,8 +683,16 @@ aside#article2 {
         align-items: center;
     }
 
+    .searchMobile i {
+        padding: 9px;
+    }
+
     .filters {
         flex-direction: column;
+    }
+
+    .filter {
+        width: 50%;
     }
 
     .filters1 {
@@ -693,6 +715,10 @@ aside#article2 {
 
     #article2 h2 {
         margin-left: 50px;
+    }
+
+    .populaire i {
+        margin: 30px 80px 0px 0px;
     }
 
     .cards3a {
@@ -743,6 +769,17 @@ aside#article2 {
         flex-direction: column;
     }
 
+    .foot {
+        margin-left: 10px;
+    }
+
+    .foot1 {
+        margin-left: 10px;
+    }
+
+    .foot2 {
+        margin-left: 10px;
+    }
 }
 /*Format tablette: écran entre 768 et 992*/
 @media screen and (min-width: 768px) and (max-width:992px){
@@ -759,11 +796,12 @@ aside#article2 {
     }
 
     #article2 h2 {
-        margin-left: 240px;
+        margin-left: 20px;
     }
 
     .cards4a {
         flex-direction: row;
+        height: auto;
     }
 
     .cards4a a {

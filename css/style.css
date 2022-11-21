@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2 ? 1 300;1 400;1 500;1 600;1 700;1 800;1 900 & display=swap');
 
 html {
-    font-family: 'Raleway',Courier, Courier, monospace;
+    font-family: 'Raleway', Courier, monospace;
 }
 
 :root {
@@ -74,7 +74,7 @@ header.navbar {
 .menu p {
     color: beige;
     width: 50%;
-    padding-top: 10px;
+    padding-top: 40px;
     margin: 0px;
 }
 
@@ -206,9 +206,9 @@ main.page {
     align-items: center;
     border: 1px solid;
     border-radius: 30px;
-    padding: 7px;
-    margin: 10px 6px;
-    width: 140px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 30px;
+    width: auto;
     opacity: 1;
     background-color: #fff;
     justify-content: center;
@@ -693,6 +693,7 @@ aside#article2 {
 
     .filter {
         width: 50%;
+        margin: 10px 10px;
     }
 
     .filters1 {
